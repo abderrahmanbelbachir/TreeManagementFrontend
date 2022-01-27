@@ -1,0 +1,33 @@
+.tree {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+.node__children {
+  display: inline-block;
+}
+.node__children .node {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+.node__label {
+  display: block;
+  text-align: center;
+  border: 1px solid;
+  height: 17px;
+  width: 17px;
+  margin: 0 auto 3rem auto;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.container .row {
+  text-align: center;
+  margin-top: 2rem;
+}

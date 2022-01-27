@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Update node {{data.node.id}}</h1>
+<div mat-dialog-content>
+  <p>Please choose the parent of the node</p>
+  <mat-form-field appearance="fill">
+    <mat-label>Parent Node</mat-label>
+    <mat-select [formControl]="selectedNode">
+      <mat-option *ngFor="let node of data.allNodes" [value]="node.id">
+        {{node.id}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="closeModal()">No Thanks</button>
+  <button mat-button (click)="updateNode()" cdkFocusInitial>Save</button>
+  <button class="delete-node-btn" mat-raised-button color="warn" (click)="deleteNode()">Delete node {{data.node.id}}</button>
+
+</div>

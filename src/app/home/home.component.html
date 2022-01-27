@@ -1,0 +1,38 @@
+<ng-template #nodeTemplateRef let-node>
+
+  <div class="node" >
+
+    <a class="node__label" (click)="openUpdateNode(node)">
+      {{ node.id }}
+    </a>
+
+    <div *ngIf="node.children" class="node__children">
+
+      <ng-template
+        ngFor
+        [ngForOf]="node.children"
+        [ngForTemplate]="nodeTemplateRef">
+      </ng-template>
+
+    </div>
+
+  </div>
+
+</ng-template>
+
+
+<div class="tree" *ngFor="let node of tree">
+  <ng-template
+    [ngTemplateOutlet]="nodeTemplateRef"
+    [ngTemplateOutletContext]="{ $implicit: node }">
+  </ng-template>
+</div>
+
+<div class="container">
+  <div class="row">
+    <h1>Actions</h1>
+  </div>
+  <div class="row">
+    <button mat-raised-button color="primary" (click)="openAddNode()">Add node</button>
+  </div>
+</div>
