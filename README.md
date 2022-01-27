@@ -15,4 +15,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 
 ## Video showing some actions on the tree
-https://belbachirabderrahman-gmail.tinytake.com/df/12066be/thumbnail?type=attachments&version_no=0&file_version_no=0&thumbnail_size=preview
+
+https://user-images.githubusercontent.com/35449115/151272674-5452aec6-b9ff-45b1-b484-4d9fb973a569.mp4
+
